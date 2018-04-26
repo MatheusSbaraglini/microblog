@@ -1,3 +1,3 @@
 # python
 
-Simple development of a social network for study
+Simple development of a microblog for study
