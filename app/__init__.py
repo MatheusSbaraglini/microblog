@@ -1,12 +1,14 @@
 """ init"""
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask_bootstrap import Bootstrap
 import config
 
 
 APP = Flask(__name__)
 APP.config.from_object('config')
 DB = SQLAlchemy(APP)
+Bootstrap(APP)
 
 from app.auth.controllers import MOD_AUTH as auth_module
 

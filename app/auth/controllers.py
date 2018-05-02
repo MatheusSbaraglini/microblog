@@ -8,7 +8,7 @@ from .forms import LoginForm
 from .models import User
 
 
-MOD_AUTH = Blueprint('auth', __name__, url_prefix='/auth')
+MOD_AUTH = Blueprint('auth', __name__, url_prefix='/auth', template_folder='/templates/auth')
 
 
 @MOD_AUTH.route('/signin/', methods=['GET', 'POST'])
